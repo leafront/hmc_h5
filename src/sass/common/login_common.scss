@@ -1,0 +1,36 @@
+.login_common{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  position:fixed;
+  background: transparent url("/images/common/login_common.png") no-repeat center 0;
+  background-size:100%;
+  .login_common_container{
+    background:$white;
+    position:absolute;
+    top: 20%;
+    bottom:10%;
+    left:10%;
+    right:10%;
+    border-radius:6px;
+    box-shadow:0 0 10px 2px #999;
+    box-sizing:border-box;
+    h3{
+      text-align: center;
+      font-size:1.6rem;
+      padding-top:40px;
+    }
+    .close_btn{
+      position: absolute;
+      top: -18px;
+      right: -15px;
+      width: 30px;
+      height: 30px;
+      z-index: 7000;
+      background: transparent url("/images/hmc_sprite.png") no-repeat -420px -54px;
+    }
+  }
+}

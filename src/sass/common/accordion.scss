@@ -1,0 +1,82 @@
+.accordion{
+  width:100%;
+  height:100%;
+  h3{
+    width:100%;
+    text-align:center;
+    font-size:1.4rem;
+    border-bottom:1px solid $line_light_gray;
+    background:$white;
+    z-index:10;
+    padding:12px 0;
+    position:relative;
+    .close_modal{
+      position:absolute;
+      right:10px;
+      bottom:10px;
+      width:20px;
+      height:20px;
+      line-height:20px;
+      background:transparent url('/images/hmc_sprite.png') no-repeat -250px -12px;
+    }
+  }
+  .rc-collapse{
+    border-radius:0;
+    border:0;
+    background:$white;
+    height:calc(100% - 42px);
+    overflow:scroll;
+  }
+  .rc-collapse > .rc-collapse-item {
+    border-top: 1px solid $line_light_gray;
+  }
+  .rc-collapse-item:last-child > .rc-collapse-content{
+    border-radius:0;
+  }
+  .rc-collapse-header{
+    position:relative;
+    font-size:1.2rem;
+    color:$line_gray;
+    .arrow{
+      position:absolute;
+      right:8px;
+      top:10px;
+    }
+  }
+  .rc-collapse > .rc-collapse-item > .rc-collapse-header{
+    width:90%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding-right:26px;
+  }
+  .rc-collapse > .rc-collapse-item > .rc-collapse-header .arrow{
+    border:0;
+    content: '';
+    width:20px;
+    height:20px;
+    background:transparent url('/images/hmc_sprite.png') no-repeat -52px -12px;
+    margin:0;
+  }
+  .rc-collapse > .rc-collapse-item-active > .rc-collapse-header .arrow{
+    background:transparent url('/images/hmc_sprite.png') no-repeat -10px -12px;
+  }
+  .rc-collapse-content{
+    font-size:1.4rem;
+    color:$gray;
+  }
+  .rc-collapse > .rc-collapse-item > .rc-collapse-header{
+    height:46px;
+    line-height:46px;
+  }
+  .rc-collapse-content > .rc-collapse-content-box{
+    margin-top:8px;
+    line-height:1.8rem;
+  }
+}
+.pop_bottom{
+  background:$bg_light_red!important;
+  > div{
+    height:100%;
+  }
+}

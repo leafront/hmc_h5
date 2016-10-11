@@ -1,0 +1,44 @@
+.popup_menu {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 2001;
+  .close_btn {
+    color: white;
+    background: none;
+    font-size: 4rem;
+    position: absolute;
+    right: 5%;
+    top: 1rem;
+  }
+  .footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    .other_btn {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      button {
+        background: none;
+        color: white;
+        margin: 0 5px;
+      }
+    }
+  }
+  .menu_list {
+    width: 80%;
+    margin: 8rem auto 0;
+    li {
+      height: 4rem;
+      line-height: 4rem;
+      border-bottom: 1px solid #757575;
+      a {
+        font-size: 1.4rem;
+        color: white;
+      }
+    }
+  }
+}

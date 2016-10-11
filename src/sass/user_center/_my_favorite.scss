@@ -1,0 +1,68 @@
+@import "../common/variable";
+.my_favorite {
+  margin-top:108px;
+  .favorite_list {
+    li {
+      padding: 1rem 0;
+      background: white;
+      margin-top: 1rem;
+      .car_desc, .price, .car_image {
+        display: inline-block;
+      }
+      .price {
+        width: 16%;
+        text-align: right;
+        padding: 0 2%;
+        .msrp {
+          text-decoration: line-through;
+        }
+        .dsrp {
+          font-size: 1.7rem;
+          color: $blue;
+        }
+      }
+      .car_desc {
+        width: 50%;
+        vertical-align: top;
+        .type_tag {
+          font-weight: bold;
+          span {
+            &::after {
+              content: ' | ';
+            }
+            &:last-child::after {
+              content: '';
+            }
+          }
+        }
+        .car_series_name {
+          margin-top: 0.5rem;
+          font-size: 1.4rem;
+        }
+        .car_model_name {
+          color: #868686;
+        }
+      }
+      .car_image {
+        width: 26%;
+        margin: 0 2%;
+        position: relative;
+        vertical-align: top;
+        .discount {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          color: white;
+          text-align: center;
+          display: block;
+          background: $blue;
+          opacity: 0.9;
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

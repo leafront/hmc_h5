@@ -1,0 +1,76 @@
+@import "../common/variable";
+.my_subscription_detail {
+  .order_info {
+    dt {
+      height: 3rem;
+      line-height: 3rem;
+      padding: 0 5px;
+      color: #969696;
+    }
+    dd {
+      background: white;
+      padding: 2rem 0;
+      border-bottom: 1px solid #eaeaea;
+      .order_shop {
+        width: 55%;
+        margin-left: 5%;
+        display: inline-block;
+      }
+      .car_price {
+        width: 35%;
+        margin-right: 5%;
+        display: inline-block;
+        color: $blue;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: right;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .order_sub_info {
+    height: 3rem;
+    line-height: 3rem;
+    background: #030a11;
+    color: white;
+    span {
+      padding: 0 5px;
+    }
+  }
+  .car_info {
+    background: white;
+    padding: 1rem 0;
+    .car_image {
+      width: 26%;
+      margin: 0 2%;
+      display: inline-block;
+    }
+    .car_desc {
+      width: 40%;
+      display: inline-block;
+      .car_series_name {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+      .car_model_name {
+        color: #868686;
+      }
+    }
+    .cancel_btn {
+      width: 30%;
+      display: inline-block;
+      button {
+        padding: 0 15px;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        background-color: #363636;
+        color: white;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

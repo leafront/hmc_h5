@@ -1,0 +1,93 @@
+@import './common/variable';
+
+.ask_order_list {
+  margin-top:44px;
+  ul {
+    li {
+      background:white;
+      &.direct_sale {
+        .car_image {
+          position: relative;
+          &::before {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color:white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            background:rgba(9,175,236,0.8);
+            display: block;
+            border-radius: 50px;
+            content:'自营';
+            position: absolute;
+          }
+        }
+      }
+      .order_time {
+        height: 4rem;
+        line-height: 4rem;
+        background:#f6f6f6;
+        span {
+          display: inline-block;
+          width: 45%;
+          &:first-child {
+            padding-left:5%;
+          }
+          &:last-child {
+            padding-right:5%;
+            text-align: right;
+          }
+        }
+      }
+      .order_detail {
+        padding:1rem 0;
+        .car_image {
+          display: inline-block;
+          width: 25%;
+          padding: 0 5%;
+        }
+        .car_desc {
+          display: inline-block;
+          width: 65%;
+          font-size: 1.4rem;
+          font-weight:bold;
+          .car_model_name {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      .order_buttons {
+        padding:1rem 0;
+        border-top: 1px solid #363636;
+        .status, .cancel_btn, .pay_result {
+          display: inline-block;
+          width: 29.33%;
+          padding: 0 2%;
+        }
+        .status {
+          text-align: center;
+          font-weight:bold;
+        }
+        .cancel_btn, .pay_result {
+          button {
+            width: 100%;
+            color: white;
+            height: 3rem;
+            font-size: 1.4rem;
+          }
+        }
+        .cancel_btn {
+          button {
+            background-color:#363636;
+          }
+        }
+        .pay_result {
+          button {
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+//direct_car_scroll
+.ds_car{
+		.car_list{
+			background-color:$white;
+			width:100%;
+			overflow-y:scroll;
+			border-bottom:1px solid $line_light_gray;
+			padding-bottom:10px;
+			ul{
+				width:680px;
+				li{
+					width:170px;
+					display:inline-block;
+					text-align:center;
+					>:nth-child(2){
+						font-size:14px;
+						margin-top:10px;
+						margin-bottom:10px;
+					}
+					>:nth-child(3){
+						width:85%;
+						margin:0 auto;
+						margin-bottom:10px;
+					}
+					p{
+						span{
+							font-size:14px;
+							font-weight:bold;
+
+						}
+						span:last-child{
+							text-decoration:line-through;
+							margin-left:5px;
+						}
+					}
+				}
+			}
+		}
+		.more{
+			height:40px;
+			line-height:40px;
+			color:$blue;
+			text-align:center;
+			font-size:14px;
+			font-weight:bold;
+			background-color:$white;
+		}
+}

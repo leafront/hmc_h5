@@ -1,0 +1,41 @@
+.popup_im{
+  text-align:center;
+  top:30%!important;
+  height:40%!important;
+  border-radius:4px;
+  .img_wrapper{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 3px solid #fff;
+    overflow: hidden;
+    margin-top: -32px;
+    img {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  h3{
+    font-size:1.5rem;
+    padding-top:1.6rem;
+  }
+  p{
+    font-size:1.2rem;
+    margin-top:4px;
+  }
+  a{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background:$blue;
+    font-weight:bold;
+    color:$white;
+    font-size:1.6rem;
+  }
+}

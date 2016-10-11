@@ -1,0 +1,74 @@
+.login_footer{
+  padding:20px 0 10px;
+  position:absolute;
+  bottom:0px;
+  left:20px;
+  right:20px;
+  .disabled{
+    background:$line_gray;
+  }
+  input, button{
+    box-sizing:border-box;
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+  input{
+    text-align:left;
+    padding:10px 1rem;
+    color:$gray;
+    border-radius:0;
+    border:1px solid $line_light_gray;
+    box-sizing:border-box;
+  }
+  button{
+    height:46px;
+    line-height:46px;
+    color:$white;
+    background:$blue;
+    margin:14px 0 16px 0;
+    font-size:1.4rem;
+    font-weight:bold;
+    &.cancel_parity{
+      margin-bottom:16px;
+      background:$black;
+      color:$white;
+    }
+    &.continue_parity{
+      margin-bottom:16px;
+    }
+  }
+  p{
+    font-style:italic;
+    font-size:1.2rem;
+    text-align:center;
+    em{
+      font-size:1.2rem;
+      font-weight:bold;
+    }
+  }
+  .attention_msg{
+    text-align:center;
+    font-size:1.2rem;
+    margin-bottom:6px;
+  }
+  .verifycode_wrap{
+    position:relative;
+    margin-top:8px;
+    button{
+      position:absolute;
+      top:0;
+      right:0;
+      margin:0;
+      height:36px;
+      line-height:36px;
+      width:40%;
+    }
+    input{
+      padding:10px 58% 10px 1rem;
+    }
+  }
+  .nick_name{
+    margin-top:8px;
+  }
+}

@@ -1,0 +1,180 @@
+.ds_car_price_loan_content{
+	padding-top:40px;
+	margin-bottom:40px;
+	.popup_title{
+		font-size:1.4rem;
+		color:$word_gray;
+		margin-top:15px;
+		margin-bottom:20px;
+		margin-left:5%;
+	}
+	li{
+		position:relative;
+	}
+	.active{
+		border:1px solid $blue;
+		background:url(/images/hook.png) no-repeat;
+		background-position:right bottom;
+		background-size:18px;
+	}
+	.bank{
+		margin-left:5%;
+		li{
+			width:30%;
+			background-color:$bg_light_blue;
+			display:inline-block;
+			text-align:center;
+			margin-right:3%;
+			margin-bottom:10px;
+			height:30px;
+			line-height:30px;
+		}
+	}
+	.loan_way{
+		margin-left:5%;
+		li{
+			width:97%;
+			background-color:$bg_light_blue;
+			display:inline-block;
+			margin-right:3%;
+			margin-bottom:10px;
+			height:60px;
+			line-height:20px;
+			p{
+				width:95%;
+				margin:0 auto;
+			}
+			p:first-child{
+				font-weight:bold;
+			}
+		}
+	}
+	.choose_confirm{
+		width:100%;
+		background-color:$blue;
+		height:40px;
+		line-height:40px;
+		color:$white;
+		font-weight:bold;
+		position:fixed;
+		bottom:0;
+	}
+}
+
+.ds_car_price_license_content{
+	padding-top:40px;
+	margin-bottom:40px;
+	.popup_title{
+		font-size:1.4rem;
+		color:$word_gray;
+		margin-top:15px;
+		margin-bottom:20px;
+		margin-left:5%;
+	}
+	li{
+		position:relative;
+	}
+	.active{
+		border:1px solid $blue;
+		background:url(/images/hook.png) no-repeat;
+		background-position:right bottom;
+		background-size:18px;
+	}
+	.license_way{
+		margin-left:5%;
+		li{
+			width:30%;
+			background-color:$bg_light_blue;
+			display:inline-block;
+			text-align:center;
+			margin-right:3%;
+			margin-bottom:10px;
+			height:30px;
+			line-height:30px;
+		}
+	}
+	.license_choose{
+		margin-left:5%;
+		li{
+			width:97%;
+			background-color:$bg_light_blue;
+			display:inline-block;
+			margin-right:3%;
+			margin-bottom:10px;
+			height:30px;
+			line-height:30px;
+			position:relative;
+			span:first-child{
+				margin-left:2%;
+			}
+			span:last-child{
+				position:absolute;
+				right:5%;
+				font-weight:bold;
+			}
+		}
+	}
+	.choose_confirm{
+		width:100%;
+		background-color:$blue;
+		height:40px;
+		line-height:40px;
+		color:$white;
+		font-weight:bold;
+		position:fixed;
+		bottom:0;
+	}
+}
+
+.ds_car_price_insurance_content{
+	padding-top:40px;
+	margin-bottom:40px;
+	.popup_title{
+		font-size:1.4rem;
+		color:$word_gray;
+		margin-top:15px;
+		margin-bottom:20px;
+		margin-left:5%;
+	}
+	li{
+		position:relative;
+	}
+	.active{
+		border:1px solid $blue;
+		background:url(/images/hook.png) no-repeat;
+		background-position:right bottom;
+		background-size:18px;
+	}
+	.insurance_choose{
+		margin-left:5%;
+		li{
+			width:97%;
+			background-color:$bg_light_blue;
+			display:inline-block;
+			margin-right:3%;
+			margin-bottom:10px;
+			height:30px;
+			line-height:30px;
+			position:relative;
+			span:first-child{
+				margin-left:2%;
+			}
+			span:last-child{
+				position:absolute;
+				right:5%;
+				font-weight:bold;
+			}
+		}
+	}
+	.choose_confirm{
+		width:100%;
+		background-color:$blue;
+		height:40px;
+		line-height:40px;
+		color:$white;
+		font-weight:bold;
+		position:fixed;
+		bottom:0;
+	}
+}
+

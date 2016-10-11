@@ -1,0 +1,130 @@
+@import 'variable';
+
+@mixin common_set{
+	position:fixed;
+	bottom:0;
+	height:50px;
+	width:100%;
+	background-color:$white;
+	box-shadow:0 -5px 20px #ccc;
+}
+
+.blue{
+	color:$blue;
+}
+
+.active{
+	color:$blue;
+}
+
+.bottom_bar_landprice{
+	@include common_set;
+	ul{
+		width:70%;
+		height:50px;
+		padding-top:5px;
+		li{
+			display: inline-block;
+			width:33%;
+			height:100%;
+			text-align: center;
+			.im{
+				color:$blue;
+			}
+		}
+	}
+	button{
+		position:absolute;
+		right:0;
+		top:0;
+		width:30%;
+		height:100%;
+		background-color:$blue;
+		color:$white;
+		font-weight: bold;
+		font-size:14px;
+	}
+}
+
+.bottom_bar_common{
+	@include common_set;
+	ul{
+		text-align: center;
+		padding-top:7px;
+		li{
+			width:20%;
+			display: inline-block;
+		}
+	}
+	
+}
+
+.bottom_bar_total_price{
+	@include common_set;
+	.im{
+		display: inline-block;
+		width:25%;
+		text-align: center;
+		color:$blue;
+		height:50px;
+		padding-top:10px;
+		vertical-align: top;
+	}
+	.save,.book{
+		height:100%;
+		color:$white;
+		font-size:14px;
+		font-weight:bold;
+	}
+	.save{
+		width:35%;
+		background-color:$gray;
+	}
+	.book{
+		width:40%;
+		background-color:$blue;
+	}
+}
+
+.bottom_bar_unsubscribe{
+	@include common_set;
+	ul{
+		text-align: center;
+		width:60%;
+		display: inline-block;
+		vertical-align: top;
+		padding-top:5px;
+		li{
+			width:33%;
+			display: inline-block;
+			
+		}
+	}
+	button{
+		width:40%;
+		height:100%;
+		background-color:$gray;
+		color:$white;
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+.bottom_bar_lock_price{
+	@include common_set;
+	.im{
+		width:25%;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		padding-top:5px;
+	}
+	.lock{
+		width:75%;
+		height: 100%;
+		background-color:$blue;
+		color:$white;
+		font-weight: bold;
+		font-size:14px;
+	}
+}

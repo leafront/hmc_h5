@@ -1,0 +1,73 @@
+@import './common/variable';
+
+.price_order_list{
+	.price_order_list_detail{
+		background-color:$white;
+		margin-bottom:70px;
+		margin-top:44px;
+		a{
+			display: block;
+		}
+		.compare{
+			background-color:$bg_light_red;
+			height:2.5rem;
+			line-height:2.5rem;
+			padding-left:1rem;
+			color:$word_gray;
+		}
+		.car_img{
+			width:37%;
+			display: inline-block;
+			margin-top:1rem;
+			margin-bottom:1rem;
+		}
+		.car_info{
+			display: inline-block;
+			width:60%;
+			p{
+				height:1.5rem;
+				line-height: 1.5rem;
+			}
+			p:first-child{
+				font-weight: bold;
+			}
+		}
+		.shop{
+			span{
+				display: inline-block;
+				width:45px;
+				height:45px;
+				margin-left:0.7rem;
+				background-image:url(/images/ask_order_list/shop.png);
+				vertical-align: top;
+				i{
+					width:45px;
+					height:45px;
+					display: inline-block;
+					background-position:center center;
+				}
+				.icon1{
+					background-image:url(/images/ask_order_list/wait.png);
+				}
+				.icon2{
+					background-image:url(/images/ask_order_list/no.png);
+				}
+				.icon3{
+					background-image:url(/images/ask_order_list/yes.png);
+				}
+				
+				.icon14{
+					background-image:url(/images/ask_order_list/yes.png);
+				}
+				.icon17{
+					background-image:url(/images/ask_order_list/smile.png);
+				}
+			}
+			p{
+				display: inline-block;
+				margin-left: 0.5rem;
+				
+			}
+		}
+	}
+}

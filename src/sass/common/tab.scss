@@ -1,0 +1,37 @@
+.ReactTabs{
+  background-color:$bg_light_red;
+  .ReactTabs__TabList{
+    background-color:$white;
+    .ReactTabs__Tab{
+      display: inline-block;
+      vertical-align: top;
+      width:33%;
+      text-align:center;
+      height:40px;
+      line-height:40px;
+      font-size:14px;
+      border:1px solid $line_light_gray;
+      border-left:none;
+    }
+    span:nth-child(2){
+      display:inline-block;
+      position:absolute;
+      right:5%;
+      i{
+        font-style:normal;
+        :first-child{
+          text-decoration:line-through;
+          display:inline-block;
+          border-right:1px solid $gray;
+          padding-right:2px;
+          margin-right:2px;
+        }
+      }
+    }
+    .ReactTabs__Tab--selected{
+      border-bottom:4px solid $blue;
+      color:$blue;
+      height:36px;
+    }
+  }
+}

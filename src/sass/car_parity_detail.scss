@@ -1,0 +1,23 @@
+@import './car_parity_detail/baseinfo';
+@import './car_parity_detail/model_list';
+@import './car_parity_detail/user_history_list';
+@import './car_parity_detail/car_parity';
+@import './car_parity_detail/history_price';
+
+.car_parity_detail_tab{
+  > .react-tabs{
+    > .ReactTabs__TabList{
+      position:fixed;
+      left:0;
+      right:0;
+      top:44px;
+      z-index:2000;
+    }
+  }
+  .ReactTabs__TabPanel{
+    padding-top:88px;
+  }
+}
+.banner_wrapper{
+  margin-top:14px;
+}

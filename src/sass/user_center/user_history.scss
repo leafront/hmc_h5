@@ -1,0 +1,41 @@
+.user_history {
+  ul {
+    margin-top: 1.2rem;
+    background: white;
+    overflow: hidden;
+    padding-top: 2rem;
+    li {
+      padding: 0 10px 2rem 20px;
+      margin-left: 50px;
+      border-left: 1px solid #e7e9ea;
+      &:last-child {
+        border-left: none;
+      }
+      .history_title {
+        position: relative;
+        top: -8px;
+        font-size: 1.4rem;
+        &::before {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 5px;
+          left: -25px;
+          display: block;
+          content: '';
+          background: url('/images/user_center/history_title_icon.jpg') no-repeat;
+          background-size: 10px auto;
+        }
+      }
+      .history_desc {
+        position: relative;
+        top: -2px;
+        font-size: 1.2rem;
+      }
+      .sign_up_time {
+        font-size: 1.2rem;
+        color:#afafaf;
+      }
+    }
+  }
+}

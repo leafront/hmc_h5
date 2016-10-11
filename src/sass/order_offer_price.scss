@@ -1,0 +1,94 @@
+@import './common/variable';
+
+.order_offer_price{
+	background-color:$white;
+	margin-top:44px;
+	.order_offer_price_info{
+		.order_id{
+			height:30px;
+			background-color:#030a11;
+			color:$white;
+			line-height:30px;
+			text-align: center;
+		}
+		img{
+			width:70%;
+			margin-left:15%;
+			margin-top:10%;
+		}
+		.car_type{
+			text-align: center;
+			font-weight: bold;
+			font-size:1.6rem;
+			margin-top: 1.5rem;
+			margin-bottom:1rem;
+		}
+		.car_info{
+			padding-bottom: 1rem;
+			p{
+				text-align: center;
+				height:20px;
+				line-height:20px;
+				span{
+					display: inline-block;
+					margin-right: 0.4rem;
+					margin-left: 0.4rem;
+				}
+			}
+		}
+	}
+	.history_price{
+		.history_price_list{
+			.ReactTabs__TabList{
+				position:relative;
+				margin-top:60px;
+				border-bottom:none;
+			}
+			.ReactTabs__TabPanel{
+				margin-top:25px;
+				ul{
+					li{
+						.history_price_content{
+							background:none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.shop_comment{
+		padding:1.5rem 0.5rem;
+		background-color:$bg_light_red;
+		.dislike,.like{
+			width:50%;
+			display: inline-block;
+			position:relative;
+			vertical-align: top;
+			img{
+				width:40px;
+			}
+		}
+		.dislike{
+			span{
+				display: inline-block;
+				height:40px;
+				line-height:40px;
+			}
+			img{
+				position:absolute;
+				right:2%;
+			}
+		}
+		.like{
+			span{
+				position:absolute;
+				right:30%;
+				height:40px;
+				line-height:40px;
+			}
+		}
+	}
+	.banner{
+		margin-bottom:70px;
+	}
+}

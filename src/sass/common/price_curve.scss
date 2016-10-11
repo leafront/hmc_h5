@@ -1,0 +1,146 @@
+@import '../common/variable';
+
+.price_curve_wrapper {
+  position:relative;
+  margin-top: 1rem;
+  .price_curve_buttons {
+    height: 10rem;
+    background-color:white;
+    canvas {
+      width: 100%;
+      height: 4rem;
+    }
+    ul {
+      position:relative;
+      li {
+        display: inline-block;
+        width: 29.33%;
+        margin: 0 2%;
+      }
+    }
+    .hmc_price {
+      width: 33%;
+      position: absolute;
+      top: 3rem;
+      margin-left: -16.6%;
+      &::before {
+        content: '';
+        position: relative;
+        top: 10.2rem;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid $blue;
+      }
+      button {
+        color: white;
+        p {
+          background: $blue;
+          height: 2rem;
+          line-height: 2rem;
+          font-weight: bold;
+          &:nth-child(2) {
+            margin-bottom: 1px;
+          }
+          &:nth-child(3) {
+            height: 4rem;
+            line-height: 4rem;
+          }
+        }
+      }
+    }
+    button {
+      width: 100%;
+      font-size: 1.4rem;
+      background:none;
+      text-align: center;
+    }
+  }
+  .price_curve {
+    height: 15rem;
+    background-color: gray;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.25rem;
+      width: 100%;
+      height: 0.5rem;
+      background: #09afec;
+    }
+    .price_point {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom:0;
+      li {
+        background-color:white;
+        position: absolute;
+        z-index: 2;
+        width: 10px;
+        height: 10px;
+        bottom: -7px;
+        border-radius:50px;
+        border:2px solid $blue;
+        margin-left: -7px;
+        &.hmc_point {
+          width: 20px;
+          height: 20px;
+          margin-left: -11px;
+          bottom: -11px;
+          border:1px solid $blue;
+          z-index: 1;
+          &::after {
+            width: 10px;
+            height: 10px;
+            left: 50%;
+            top:50%;
+            margin-left: -5px;
+            margin-top: -5px;
+            background-color: $blue;
+            border-radius:50px;
+            position: absolute;
+            display: block;
+            content: '';
+          }
+        }
+      }
+    }
+    .quantiles {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .quantile_component {
+        height: 100%;
+        position: absolute;
+        border-left:1px solid #e7e9ea;
+        background-color:white;
+        &:first-child {
+          background-color:#f7f7f7;
+          border-left:none;
+        }
+        &:nth-child(2){
+          background-color:#fbfcf1;
+        }
+      }
+    }
+    .charts {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left:0;
+      top:0;
+      background: url(/images/common/price_curve_bg.png) no-repeat;
+      background-size: 100% 100%;
+      li {
+        bottom:0;
+        margin:0 1%;
+        background-color: #d9dbdd;
+        height: 0%;
+        position: absolute;
+      }
+    }
+  }
+}

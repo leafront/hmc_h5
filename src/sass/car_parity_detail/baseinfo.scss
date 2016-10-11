@@ -1,0 +1,61 @@
+.base_info_wrap{
+  // float:left;
+  position:relative;
+  width:100%;
+  margin-top:10px;
+  border-top:1px solid $line_light_gray;
+  border-bottom:1px solid $line_light_gray;
+  .gallery{
+    position:absolute;
+    bottom:0;
+    left:0;
+    span{
+      display:block;
+      width:36px;
+      height:36px;
+      background:rgba(0,0,0,0.3) url('/images/car_parity_detail/larger.png') no-repeat center center;
+      background-size:20px;
+    }
+  }
+}
+.base_info{
+  background:$white;
+  float:left;
+  width:100%;
+  .img_container{
+    box-sizing:border-box;
+    float:left;
+    display:block;
+    width:44%;
+    padding:0.6rem;
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
+  .car_desc{
+    box-sizing:border-box;
+    float:right;
+    width:56%;
+    text-align:right;
+    padding:20px 1rem 20px 0;
+    h1{
+      font-size:1.5rem;
+      color:$gray;
+      margin-bottom:6px;
+    }
+    h2{
+      font-size:1.2rem;
+      color:$gray;
+      margin-bottom:6px;
+    }
+    button{
+      background:$blue;
+      color:$white;
+      width:10rem;
+      height:30px;
+      line-height:30px;
+      font-size:1.4rem;
+    }
+  }
+}

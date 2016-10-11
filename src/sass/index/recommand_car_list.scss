@@ -1,0 +1,12 @@
+.recommand_car_list {
+  background: white;
+  li {
+    width: 33.33%;
+    padding: 1rem 0;
+    display: inline-block;
+    text-align: center;
+    .car_name {
+      margin-top: 0.5rem;
+    }
+  }
+}

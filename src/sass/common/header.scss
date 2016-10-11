@@ -1,0 +1,22 @@
+.title{
+  clear:both;
+  box-sizing:border-box;
+  float:left;
+  font-weight:bold;
+  border-left:4px solid $blue;
+  margin:8px 0 8px 0;
+  padding:10px 10px 10px 10px;
+  color:$word_gray;
+  line-height:1.3rem;
+  width:100%;
+  span{
+    font-size:1.2rem;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  small{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:1rem;
+  }
+}

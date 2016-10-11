@@ -1,0 +1,127 @@
+@import "./common/variable";
+.direct_sale_list {
+  .banner{
+    margin-top:44px;
+  }
+  .custom_offer {
+    height: 6rem;
+    background: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1.5rem 2% 1.5rem;
+    margin-bottom:5rem;
+    .sub_desc {
+      color: $blue;
+      font-size: 1.2rem;
+    }
+    .car_image {
+      width: 24%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5%;
+    }
+    .offer_desc {
+      width: 71%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .more_car_button {
+    button {
+      width: 100%;
+      height: 4rem;
+      line-height: 4rem;
+      background: none;
+      color: $blue;
+      font-size: 1.3rem;
+    }
+  }
+  .ds_car_filter {
+    height:35px;
+    line-height:35px;
+    width:100%;
+    background-color:$bg_light_blue;
+    text-align:right;
+    img {
+      margin-right: 10px;
+    }
+    span {
+      display: inline-block;
+      margin-right:10px;
+    }
+  }
+  .ds_car_list_type {
+    background: white;
+    >li {
+      border-bottom:1px solid $line_dark_gray;
+      a {
+        display: block;
+        padding: 0.5rem 0 2rem 0;
+        .car_image {
+          width:24%;
+          display:inline-block;
+          vertical-align: top;
+          position:relative;
+          padding:1rem 2% 0;
+          img {
+            padding: 1rem 2% 0;
+          }
+          .discount {
+            position:absolute;
+            top:1.5rem;
+            left:5%;
+            width:38px;
+            height:38px;
+            line-height:38px;
+            border-radius:50%;
+            text-align:center;
+            background-color:rgba(58,191,240,0.8);
+            color:$white;
+            font-weight: bold;
+          }
+        }
+        .car_name {
+          display:inline-block;
+          padding-top: 1rem;
+          width:50%;
+          vertical-align: top;
+          >:first-child {
+            font-size:1.4rem;
+            margin-bottom:5px;
+          }
+          >:nth-child(2) {
+            color:#aaa;
+            font-size:1.4rem;
+            margin-bottom:10px;
+          }
+          ul {
+            li {
+              display:inline-block;
+              border-right:2px solid $gray;
+              margin-right:3px;
+              padding-right:3px;
+              font-weight:bold;
+            }
+            li:last-child {
+              border-right:none;
+            }
+          }
+        }
+        .car_price {
+          width:18%;
+          display:inline-block;
+          vertical-align:top;
+          padding:1rem 2% 0;
+          :first-child {
+            color:$blue;
+            font-weight:bold;
+            font-size:1.6rem;
+          }
+          :last-child {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

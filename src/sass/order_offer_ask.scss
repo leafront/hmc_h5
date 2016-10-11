@@ -1,0 +1,85 @@
+@import './common/variable';
+
+.order_offer_ask{
+	background-color:$bg_light_red;
+	margin-top:44px;
+	.order_offer_ask_info{
+		background-color:$white;
+		.discount{
+			width:37%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.car_name{
+			display: inline-block;
+			vertical-align: top;
+			width: 60%;
+			text-align: right;
+		}
+	}
+
+	.order_offer_ask_info_detail{
+		.order_offer_ask_basic_info,.order_offer_ask_price_info,.order_offer_ask_tax_info,.order_offer_ask_decoration_info{
+			margin-top:2rem;
+			background-color:$white;
+		}
+		font-size:1.4rem;
+		ul{
+			li{
+				height:50px;
+				line-height:50px;
+				position:relative;
+				padding-left:5%;
+				border-bottom:1px solid $line_light_gray;
+				span:last-child{
+					text-align:right;
+					display:inline-block;
+					position:absolute;
+					right:5%;
+				}
+				i{
+					font-style:normal;
+				}
+			}
+		}
+		.order_offer_ask_extra_info{
+			background-color:$white;
+			padding-top:5%;
+			margin-top:5%;
+			span:first-child{
+				padding-left:5%;
+			}
+			span:last-child{
+				display: inline-block;
+				vertical-align: top;
+				text-align: right;
+				width:70%;
+				margin-left:5%;
+			}
+		}
+	}
+
+	.order_offer_ask_service_manager{
+		background-color:$white;
+		margin-top:2rem;
+		.manager{
+			width:37%;
+			display: inline-block;
+			vertical-align: top;
+			img{
+				border-radius:50%;
+				width:70px;
+				height:70px;
+			}
+		}
+		.manager_info{
+			display: inline-block;
+			vertical-align: top;
+			width: 60%;
+			text-align: right;
+		}
+	}
+	.banner{
+		margin-bottom: 70px;
+	}
+}
